@@ -17,15 +17,20 @@ export const MenuContainer = styled.div`
     color: #000000;
     letter-spacing: 0.15em;
     border-left: 1px solid #000000;
-    padding-top: 180px;
+    padding-top: 220px;
     transition-duration: 350ms;
     z-index: 1;
     pointer-events: all;
+    background-color: #FFFFFF;
+    @media (max-width: 800px) {
+        position: fixed;
+    }
 `;
 
 export const MenuAction = styled.div`
     font-size: 14px;
-    margin-bottom: 90px;
+    margin-bottom: 100px;
+    cursor: pointer;
     ${visibilityTransition};
 `;
 
@@ -33,7 +38,7 @@ export const MenuLink = styled.a`
     font-size: 13px;
     color: inherit;
     text-decoration: none;
-    margin-bottom: 90px;
+    margin-bottom: 100px;
     ${visibilityTransition};
 `;
 

@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Gothic A1', sans-serif;
+  user-select: none;
 }
 
 html, body {
@@ -16,6 +17,12 @@ body {
   background-color: #FFFFFF;
   min-height: 100vh;
   margin: 0;
-  padding: 30px 20px;
+  padding: 40px 30px;
   overflow: hidden;
+}
+
+@media (max-width: 800px) {
+  body {
+    overflow-y: auto;
+  }
 }
