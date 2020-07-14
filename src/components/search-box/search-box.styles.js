@@ -19,7 +19,7 @@ export const SearchBoxContainer = styled.div`
 `;
 
 export const SearchBoxInput = styled.input`
-    width: 280px;
+    width: 250px;
     height: 100%;
     font-size: 15px;
     color: #000000;
