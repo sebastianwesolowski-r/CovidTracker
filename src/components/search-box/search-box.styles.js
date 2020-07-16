@@ -21,14 +21,14 @@ export const SearchBoxContainer = styled.div`
 export const SearchBoxInput = styled.input`
     width: 250px;
     height: 100%;
-    font-size: 15px;
+    font-size: 1rem;
     color: #000000;
     letter-spacing: 0.15em;
     border: none;
     background: none;
     outline: none;
     &::placeholder {
-        font-size: 13px;
+        font-size: 0.8rem;
         color: rgba(0,0,0, 0.70);
     }
 `;

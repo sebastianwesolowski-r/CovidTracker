@@ -28,14 +28,14 @@ export const MenuContainer = styled.div`
 `;
 
 export const MenuAction = styled.div`
-    font-size: 14px;
+    font-size: 0.9rem;
     margin-bottom: 100px;
     cursor: pointer;
     ${visibilityTransition};
 `;
 
 export const MenuLink = styled.a`
-    font-size: 13px;
+    font-size: 0.8rem;
     color: inherit;
     text-decoration: none;
     margin-bottom: 100px;
@@ -45,7 +45,7 @@ export const MenuLink = styled.a`
 export const Author = styled.a`
     position: absolute;
     bottom: 30px;
-    font-size: 12px;
+    font-size: 0.7rem;
     color: inherit;
     text-decoration: none;
     ${visibilityTransition};

@@ -15,7 +15,7 @@ export const HeaderContainer = styled.header`
 `;
 
 export const AppName = styled.div`
-    font-size: 16px;
+    font-size: 1rem;
     color: #000000;
 `;
 

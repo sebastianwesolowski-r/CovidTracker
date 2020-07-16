@@ -21,7 +21,7 @@ export const FooterContainer = styled.footer`
 `;
 
 export const FooterParagraph = styled.p`
-    font-size: 13.5px;
+    font-size: 0.9rem;
     word-wrap: break-word;
     line-height: 25px;
     color: rgba(0, 0, 0, 0.90);
@@ -29,12 +29,12 @@ export const FooterParagraph = styled.p`
 `;
 
 export const FooterLink = styled.a`
-    font-size: 16px;
+    font-size: 1rem;
     text-decoration: none;
     color: #0038FF;
     margin-right: 40px;
     @media (max-width: 800px) {
-        font-size: 14px;
+        font-size: 0.9rem;
         margin: 0;
     }
 `;

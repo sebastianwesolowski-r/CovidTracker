@@ -19,12 +19,12 @@ export const StatsItemContainer = styled.div`
     justify-content: space-between;
     width: 330px;
     height: 70px;
-    font-size: 14px;
+    font-size: 0.90rem;
     color: ${props => getItemStyle(props)};
     letter-spacing: 0.15em;
     margin: 0 75px;
     span {
-        font-size: 22px;
+        font-size: 1.4rem;
         letter-spacing: 0.2em;
     }
     @media (max-width: 800px) {

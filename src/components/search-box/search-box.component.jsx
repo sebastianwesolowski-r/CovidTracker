@@ -18,6 +18,7 @@ const SearchBox = ({setData, setFetching}) => {
         .then(response => response.json())
         .then(data => data.pop())
         .then(convertedData => {setData({stats: {country: convertedData.Country, confirmed: convertedData.Confirmed, recovered: convertedData.Recovered, deceased: convertedData.Deaths}, initialFetch: false}); setFetching(false);})
+        .catch(() => alert('Country not found'));
     };
 
     return (

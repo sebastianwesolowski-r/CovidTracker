@@ -13,8 +13,9 @@ export const PanelContainer = styled.div`
 `;
 
 export const PanelTitle = styled.div`
-    font-size: 13px;
+    font-size: 0.9rem;
     color: #000000;
+    text-align: center;
     letter-spacing: 0.15em;
     margin-bottom: 100px;
     @media (max-width: 800px) {
