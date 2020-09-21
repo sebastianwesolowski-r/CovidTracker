@@ -3,15 +3,21 @@ import React from 'react';
 import {PanelContainer, PanelTitle, PanelItems} from './stats-panel.styles';
 
 import StatsItem from '../stats-item/stats-item.component';
+import Spinner from '../spinner/spinner.component';
 
-const StatsPanel = ({data}) => (
+const StatsPanel = ({isFetching, data}) => (
     <PanelContainer>
-        <PanelTitle>{data.initialFetch ? 'WORLD CASES' : `CASES IN ${data.stats.country.toUpperCase()}`}</PanelTitle>
-        <PanelItems>
-            <StatsItem type={'confirmed'} number={data.stats.confirmed}/>
-            <StatsItem type={'recovered'} number={data.stats.recovered}/>
-            <StatsItem type={'deceased'} number={data.stats.deceased}/>
-        </PanelItems>
+        {
+            isFetching ? (
+                <Spinner />
+            ) : (
+                <PanelItems>
+                    <StatsItem type={'confirmed'} number={data.stats.confirmed}/>
+                    <StatsItem type={'recovered'} number={data.stats.recovered}/>
+                    <StatsItem type={'deceased'} number={data.stats.deceased}/>
+                </PanelItems>
+            )
+        }
     </PanelContainer>
 );
 

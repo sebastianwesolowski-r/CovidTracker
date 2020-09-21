@@ -2,31 +2,23 @@ import styled from 'styled-components';
 
 export const PanelContainer = styled.div`
     display: flex;
-    flex-direction: column;
     align-items: center;
-    width: 100%
-    border: 1px solid;
-    margin-top: 180px;
+    height: 100px;
+    margin-top: 80px;
+    z-index: 1;
     @media (max-width: 800px) {
-        margin-top: 100px;
-    }
-`;
-
-export const PanelTitle = styled.div`
-    font-size: 0.9rem;
-    color: #000000;
-    text-align: center;
-    letter-spacing: 0.15em;
-    margin-bottom: 100px;
-    @media (max-width: 800px) {
-        margin-bottom: 60px;
+        height: unset;
+        margin-top: 40px;
     }
 `;
 
 export const PanelItems = styled.div`
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 950px;
     @media (max-width: 800px) {
         flex-direction: column;
+        width: 100%;
     }
 `;

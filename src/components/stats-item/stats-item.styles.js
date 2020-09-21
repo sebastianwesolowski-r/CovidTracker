@@ -17,18 +17,18 @@ export const StatsItemContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 330px;
     height: 70px;
-    font-size: 0.90rem;
+    font-size: 1rem;
+    font-weight: 500;
     color: ${props => getItemStyle(props)};
     letter-spacing: 0.15em;
-    margin: 0 75px;
     span {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         letter-spacing: 0.2em;
+        font-weight: 400;
     }
     @media (max-width: 800px) {
         height: 60px;
-        margin: 20px 0;
+        margin: 30px 0;
     }
 `;
